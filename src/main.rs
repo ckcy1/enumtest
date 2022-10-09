@@ -8,13 +8,24 @@ enum Cion {
 }
 impl Cion{
     fn shucion(cion:Cion){
-
+match cion {
+    Cion::yifen =>{
+        println!("一分前")
+    }
+    Cion::wufen =>{
+        println!("五分前")
+    }
+    _ =>{
+        println!("无钱")
+    }
+}
     }
 }
 
-
-
-
 fn main() {
+    let yi = Cion::yifen;
+    Cion::shucion(yi);
+
+
     println!("Hello, world!");
 }
